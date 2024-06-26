@@ -105,7 +105,7 @@ const Fitlers = () => {
                         <Accordion type="single" collapsible className="w-full">
                             {CategoryData2 && CategoryData2.available_filters.find(filter => filter.id === 'category')?.values.map((x, index) =>
                                 <AccordionItem value={x.id} key={index}>
-                                    <AccordionTrigger className='text-wrap text-left' onClick={() => handleCategorySelect(x.id)} >{x.name} {x.id}</AccordionTrigger>
+                                    <AccordionTrigger className='text-wrap text-left' onClick={() => handleCategorySelect(x.id)} >{x.name}</AccordionTrigger>
                                     <AccordionContent>
                                     <ul>
                                         {!isLoading && subCategoryData ? (
@@ -113,7 +113,7 @@ const Fitlers = () => {
                                                 subCategoryData.available_filters.find(filter => filter.id === 'category')?.values?.length ? (
                                                 subCategoryData.available_filters.find(filter => filter.id === 'category')!.values.map((result) => (
                                                     <li className='' key={result.id}>
-                                                        <Button variant={'ghost'} onClick={() => handleRoute(result.id)}>{result.name}</Button>
+                                                        <Button variant={'ghost'} onClick={() => handleRoute(result.id)}> {result.name}</Button>
                                                     </li>
                                                 ))
                                             ) : (
