@@ -147,7 +147,11 @@ const TableMer = () => {
 };
 
 const formatPrice = (price: any) => {
-  return price.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  const formattedPrice = Number(price).toLocaleString('en-US', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 2,
+  });
+  return formattedPrice;
 };
 function ChevronLeftIcon(props: any) {
   return (
