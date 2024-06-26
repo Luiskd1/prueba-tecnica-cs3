@@ -1,10 +1,41 @@
-[X] Al entrar a la ruta / deberíamos ver un listado de los primeros 10 productos de la empresa en forma de tabla.
-[X] Al entrar a la ruta /[category_id] deberíamos ver un listado de productos correspondientes a esa categoría.
-[X] En todas las rutas, deberíamos ver un menú a la izquierda con las categorías disponibles. Las categorías deberían mostrarse en forma de árbol, es decir, si una categoría tiene subcategorías, deberían mostrarse como un submenú.
-[X] Las categorías deberían iniciar contraídas, y al hacer clik un botón de - o + deberían expandirse o contraerse individualmente.
-[X] Las categorías deberían mantener su estado de expansión/contracción al navegar entre rutas.
-[X] Al clikear una categoría, deberíamos navegar a la ruta /[category_id] correspondiente.
-[X] Al clikear un producto debería redirigirnos a la web de Mercado Libre para ese producto.
-[X] Si la consulta lo permite la tabla debe permitir paginar de manera eficiente sobre los productos.
-[X] La paginación deben ser consultas sobre los filtros actuales de la tabla (revisar la documentación mencionada en los Recursos de la prueba).
-[x] Las imágenes de los productos deben tener carga perezosa
+# Prueba Técnica Mercado Libre
+
+Implementación de una aplicación web para explorar productos de Mercado Libre con funcionalidades avanzadas de navegación y filtrado.
+
+
+## Funcionalidades Implementadas
+
+- **Listado de Productos:** Visualización de los primeros 10 productos en forma de tabla en la ruta `/`.
+- **Listado por Categoría:** Mostrar productos correspondientes a una categoría específica en la ruta `/[category_id]`.
+- **Menú de Categorías:** Menú lateral que muestra categorías disponibles en forma de árbol, con capacidad de expansión y contracción.
+- **Navegación y Redirección:** Navegación a la ruta correspondiente al hacer clic en una categoría. Redirección a la página de Mercado Libre al hacer clic en un producto.
+- **Paginación Eficiente:** Implementación de paginación eficiente sobre productos, respetando los filtros actuales de la tabla.
+- **Carga Perezosa de Imágenes:** Implementación de carga perezosa para mejorar el rendimiento al cargar imágenes de productos.
+
+## Tecnologías Utilizadas
+
+- Next.js
+- React
+- Redux
+- tankstack query
+- Tailwind
+- Shadcn
+- axios
+- API de Mercado Libre
+
+## Instrucciones de Instalación y Uso
+
+### Requisitos Previos
+
+- Node.js y npm instalados
+
+### Pasos para Instalar
+
+1. Clona el repositorio: `git clone https://github.com/Luiskd1/prueba-tecnica-cs3`
+2. Entra al directorio del proyecto: `cd tu-proyecto`
+3. Instala las dependencias: `npm install`
+
+### Ejecución
+
+- Para ejecutar el proyecto: `npm run dev`
+- Abre tu navegador y visita: `http://localhost:3000`
