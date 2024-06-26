@@ -28,7 +28,6 @@ export const useCategoryData = (sellerId:number, ) => {
 };
 
 export const useSubCategory = (sellerId:number, Category:string ) => {
-  console.log(Category)
   const { data: subCategoryData, refetch, status, isFetching, isLoading } = useQuery<MerData>({
     queryKey: ['data2', sellerId, Category],
     queryFn: async () => await fetchApi(`/search?seller_id=${sellerId}&category=${Category}`),
